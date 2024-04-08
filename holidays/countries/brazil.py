@@ -106,10 +106,14 @@ class Brazil(HolidayBase, ChristianHolidays, InternationalHolidays):
 
         # All Souls' Day.
         self._add_all_souls_day("Finados")
-
+        
         # Republic Proclamation Day.
         self._add_holiday_nov_15("Proclamação da República")
 
+        if self._year >= 2024:
+            # Black Awareness Day
+            self._add_holiday_nov_20("Dia Nacional de Zumbi e da Consciência Negra")
+        
         if self._year >= 1922:
             # Christmas Day.
             self._add_christmas_day("Natal")
